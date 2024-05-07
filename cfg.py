@@ -34,8 +34,8 @@ def run():
         months.append(row["month"])
         sale = int(row["sales"])
         sales.append(sale)
-        # Task 2/3
-        # print(sale)
+    # Task 2
+    print(sales)
         
 # Extended task: Calculate the following:
 # Monthly changes as a percentage
@@ -50,10 +50,12 @@ def run():
     highest_sales_month = months[sales.index(max(sales))]
     lowest_sales_month = months[sales.index(min(sales))]
 # Extended task, Output a summary of the results to a spreadsheet
-    with open("summary.csv", "w", newline="") as summary_csv:
+    with open("summary.csv", "w", newline = "") as summary_csv:
         writer = csv.writer(summary_csv)
         writer.writerow(["Total Sales", "Average Sales", "Highest Sales Month", "Lowest Sales Month", "Monthly Changes (%)"])
         writer.writerow([sum(sales), average_sales, highest_sales_month, lowest_sales_month, changes])
+    # Task 3
+    print(sum(sales))
 
 
 # Creation of Barplot with % Monthly Changes:
