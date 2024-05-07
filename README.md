@@ -1,3 +1,5 @@
+![image](https://github.com/deasatko/CFG/assets/28845513/2bc930b1-3ae4-41c6-af64-39ef2de0a206)
+
 # Project Brief: Spreadsheet Analysis
 
 In this project you'll use Python to do very basic data analysis on a spreadsheet. The standard
